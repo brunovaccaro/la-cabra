@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MESSI | SORTEOS</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="icon" href="../images/logo.png">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="logo Messi" class="logo-messi">
+            <h2 class="lacabra">LA CABRA</h2>
+        </a>
+        <nav>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="biografia.html">BIOGRAFIA</a></li>
+                <li><a href="galería.html">GALERIA</a></li>
+                <li><a href="sorteos.html">SORTEOS</a></li>
+            </ul>
+            <input type="checkbox" id="check">
+            <label for="check" class="boton-check">
+                <img src="../bars.png" class="menu-hamburguesa">
+            </label>
+        </nav>
+    </header>
+    <main id="sorteos">
+
+        <div class="titulo sorteos">
+            <h1 class="encabezados-paginas">sorteos</h1>
+        </div>
+
+        <div class="sorteo-bloque1">
+            <div>
+                <h2>Ganate un viaje a París para ver jugar a Leo y un montón de premios más!</h2>
+            </div>
+            <div>
+                <h4>Completá el formulario y ya estás participando</h4>
+            </div>
+            <div>
+                <img src="../images/messi-psg-sorteo.jpg" alt="Messi sorteo" class="img-sorteo">
+            </div>
+        </div>
+
+        <div class="sorteo-bloque2">
+            <form class="sorteos-form">
+                <h4>Completá tus datos</h4>
+                <div>
+                    <label for="nombreyapellido">Nombre y Apellido</label>
+                    <input type="text" name="Nombre" placeholder="nombre y apellido" id="nombreyapellido">
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="correo electrónico" placeholder="email" id="email">
+                </div>
+                <div>
+                    <label for="fechadenac">Fecha de Nacimiento</label>
+                    <input type="date" name="fecha de nacimiento">
+                </div>
+                <div>
+                    <label for="nacionalidad">Nacionalidad</label>
+                    <input type="text" name="Nacionalidad" placeholder="nacionalidad" id="nacionalidad">
+                </div>
+                <div>
+                    <label for="comentario">Dejanos tu comentario</label>
+                    <textarea id="comentario" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox">Deseo recibir todas las novedades sobre Lionel Messi
+                </div>
+
+                <div class="botones">
+                    <input type="reset" class="reset">
+                    <input type="submit" class="submit">
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>Todos los derechos reservados &copy;</p>
+        </div>
+        <div class="redes">
+            <ul class="iconos-redes">
+                <li><a href="https://www.facebook.com/leomessi/" target="_blank"><img src="../images/facebook.png"
+                            alt="Facebook Messi"></a></li>
+                <li><a href="https://www.youtube.com/user/leomessi" target="_blank"><img src="../images/youtube.png"
+                            alt="YouTube Messi"></a></li>
+                <li><a href="https://www.instagram.com/leomessi/" target="_blank"><img src="../images/instagram.png"
+                            alt="Instagram Messi"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
