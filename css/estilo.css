@@ -60,9 +60,7 @@ a {
     width: 80px;
 }
 
-.container-fluid {
-    padding: 0;
-}
+
 
 .navbar {
     padding: 0 !important;
@@ -71,14 +69,11 @@ a {
 .navbar-brand {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
-    font-size: 2.5rem;
     text-shadow: 0 2px 2px rgb(70, 68, 7);
-    margin-left: .5rem;
 }
 
 .navbar-toggler {
     border: rgb(239, 239, 239) solid 1px;
-    margin-right: 0.5rem;
 }
 
 .navbar-toggler:focus {
@@ -506,7 +501,7 @@ textarea {
 /***************** FOOTER *****************/
 
 footer {
-    height: 90px;
+    height: auto;
     background: linear-gradient(to bottom right, #beaa27, #7c730e);
     border-top: 3px solid #252422;
     display: flex;
@@ -516,6 +511,7 @@ footer {
     grid-area: footer;
 }
 
+
 .copyright p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -523,14 +519,12 @@ footer {
     display: flex;
     justify-content: flex-start;
     color: rgb(0, 0, 0);
-    border-top: 40px;
 }
 
 
 .iconos-redes {
-    width: fit-content;
-    margin: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .iconos-redes li {
@@ -560,7 +554,7 @@ footer {
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
 
     .encabezados-paginas {
         font-size: 2.5rem;
@@ -644,10 +638,14 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 20px;
+        align-items: center;
+        padding: 16px;
 
     }
 
+    .iconos-redes{
+        max-width: auto;
+    }
 
     .redes img {
         width: 2rem;
@@ -656,13 +654,18 @@ footer {
 
     .copyright {
         font-size: 0.3rem;
-
+        max-width: auto;
     }
 
+    .copyright p{
+        margin-bottom: 0;
+    }
+
+   
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
 
     /* HEADER */
 
@@ -670,6 +673,9 @@ footer {
         display: none;
     }
 
+    .navbar-toggler{
+        border: none;
+    }
 
     /* FIN HEADER */
 
