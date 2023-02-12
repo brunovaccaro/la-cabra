@@ -50,84 +50,9 @@ body {
 }
 
 /****************** HEADER *******************/
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid #FFAA00 3px;
-    grid-area: header;
-    width: 100%;
-    height: 95px;
     background: linear-gradient(to bottom right, #277DA1, #052c3f);
-
 }
-
-nav {
-    display: flex;
-    align-items: center;
-
-}
-
-header img {
-    height: 88px;
-    margin: 5px 5px 0 5px;
-    cursor: pointer;
-
-}
-
-.boton-check {
-    filter: invert(1);
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-
-header h2 {
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: rgb(239, 239, 239);
-    font-style: oblique;
-    text-shadow: 0 2px 2px rgb(70, 68, 7);
-}
-
-header a {
-    display: flex;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    color: rgb(239, 239, 239);
-    text-shadow: 0 2px 2px rgb(37, 36, 2);
-
-}
-
-.menu-hamburguesa {
-    height: 4rem;
-}
-
-header a:hover {
-    color: #F9C74F;
-    transition: .5s;
-}
-
-header ul {
-    display: flex;
-}
-
-header li {
-    list-style: none;
-}
-
-
-nav a {
-    margin-right: 20px;
-}
-
 
 
 

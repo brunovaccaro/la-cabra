@@ -6,31 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MESSI | LA CABRA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="icon" href="images/logo.png">
 </head>
 
 <body class="body-index">
-    <header>
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="logo Messi" class="logo-messi">
-            <h2 class="lacabra">LA CABRA</h2>
-        </a>
-        <nav>
-            
-            <ul class="nav-menu">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="./pages/noticias.html">NOTICIAS</a></li>
-                <li><a href="./pages/biografia.html">BIOGRAFIA</a></li>
-                <li><a href="./pages/galería.html">GALERIA</a></li>
-                <li><a href="./pages/sorteos.html">SORTEOS</a></li>
-            </ul>
-            <input type="checkbox" id="check">
-            <label for="check" class="boton-check">
-                <img src="bars.png" class="menu-hamburguesa">
-            </label>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">biografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">sorteos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main class="index">
 
@@ -83,6 +93,9 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
