@@ -20,8 +20,6 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #F0F5EF;
-
-
 }
 
 .encabezados-paginas {
@@ -31,9 +29,9 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 50px;
-    text-shadow: 2px 2px rgb(94, 131, 144);
+    text-shadow: 1px 1px rgb(94, 131, 144);
     border-bottom: black solid 3px;
     border-right: black solid 3px;
     border-radius: 4px;
@@ -205,106 +203,53 @@ li a:hover {
 
 /***************** NOTICIAS *****************/
 
-.noticias {
-    grid-area: titulonoti;
-}
-
-.noticia1 {
-    grid-area: noticia1;
-}
-
-.noticia2 {
-    grid-area: noticia2;
-}
-
-
-.noticia3 {
-    grid-area: noticia3;
-}
-
-.noticia4 {
-    grid-area: noticia4;
-}
-
-.noticia {
-    width: 90%;
-    height: 35rem;
-    margin: 1.5rem 1rem;
-    padding: 0.3rem;
-    border: 3px solid rgb(103, 93, 20);
-    border-radius: 10px;
-    background-color: rgb(244, 244, 244);
+.img{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    box-sizing: content-box;
+    padding: .5rem;
+    
 }
 
-
-article {
-    height: 20rem;
+.img-sm{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: .2rem;
+    margin: 0 auto;
+
+}
+
+.img-sm p{
+    font-size: .9rem;
     text-align: justify;
-    font-size: 20px;
-    margin: 5px;
 }
 
-.cont-img {
-    width: 100%;
-    display: flex;
-    max-height: 360px;
-
+.img-sm h3{
+    padding: 0 20px;
 }
 
-.images-noticias {
-    max-width: 100%;
-    padding: 2px;
-
+#noticias img{
+    border-radius: 3px;
 }
 
-article h2 {
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-article p {
-    margin-top: 1rem;
-}
-
-
-article button {
-    font-size: 13px;
-    margin-top: 10px;
+#noticias button {
     padding: 2px 5px;
     border-radius: 8px;
     background-color: rgb(218, 233, 239);
-    font-weight: bold;
     box-shadow: 1px 1px 2px black;
-    cursor: pointer;
-
-
-
 }
 
-article button:hover {
-    background-color: lightblue;
+.button-small{
+    font-size: .7rem;
 }
 
-
-
-#noticias {
-    display: grid;
-    gap: 1rem;
-    grid-template:
-        "titulonoti titulonoti"
-        "noticia1 noticia2"
-        "noticia3 noticia4";
+#noticias p{
+    text-align: justify;
+    padding: 0 3rem;
 }
+
 
 /***************** FIN NOTICIAS *****************/
 
