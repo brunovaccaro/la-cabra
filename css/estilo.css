@@ -188,7 +188,6 @@ a {
     flex-direction: column;
     align-items: center;
     padding: .5rem;
-
 }
 
 .img-sm {
@@ -198,7 +197,10 @@ a {
     justify-content: center;
     padding: .2rem;
     margin: 0 auto;
+}
 
+.img-sm h3 {
+    padding: 0 20px;
 }
 
 .img-sm p {
@@ -206,9 +208,6 @@ a {
     text-align: justify;
 }
 
-.img-sm h3 {
-    padding: 0 20px;
-}
 
 #noticias img {
     border-radius: 3px;
@@ -240,9 +239,7 @@ a {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
-
 
 .biografia h1 {
     margin-top: 25px;
@@ -252,14 +249,7 @@ a {
     display: flex;
     align-items: center;
     padding: 1rem;
-
 }
-
-.biografia__bloque img {
-    width: 40vw;
-    object-fit: cover;
-}
-
 
 
 .biop {
@@ -271,13 +261,17 @@ a {
     letter-spacing: 1px;
     line-height: 1.8;
     color: rgb(14, 15, 2);
-    text-shadow: 1px 1px rgb(34, 32, 32);
+    text-shadow: 1px 1px rgb(33, 34, 32);
 }
 
 .parrafo2 p {
     text-align: right;
 }
 
+.biografia__bloque img {
+    width: 40vw;
+    object-fit: cover;
+}
 
 
 /***************** FIN BIOGRAFIA *****************/
