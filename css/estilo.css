@@ -58,7 +58,7 @@ a {
     width: 80px;
 }
 
-.logo:hover{
+.logo:hover {
     color: #F0F5EF;
 }
 
@@ -99,13 +99,13 @@ a {
     font-weight: 500;
 }
 
-.linkNav{
+.linkNav {
     transition: all .5s;
 }
 
 .linkNav:hover {
-    color: rgb(194, 188, 0);
-    transform: scale(1.05,1.05);
+    color: rgb(214, 207, 2);
+    transform: scale(1.05, 1.05);
 }
 
 .fondoHeader {
@@ -137,7 +137,7 @@ a {
     grid-area: section1;
 }
 
-.section-index1 h2{
+.section-index1 h2 {
     margin: 0 1.5rem;
     font-size: 6rem;
     text-align: center;
@@ -207,15 +207,15 @@ a {
 
 /***************** NOTICIAS *****************/
 
-.img{
+.img {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: .5rem;
-    
+
 }
 
-.img-sm{
+.img-sm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,16 +225,16 @@ a {
 
 }
 
-.img-sm p{
+.img-sm p {
     font-size: .9rem;
     text-align: justify;
 }
 
-.img-sm h3{
+.img-sm h3 {
     padding: 0 20px;
 }
 
-#noticias img{
+#noticias img {
     border-radius: 3px;
 }
 
@@ -245,11 +245,11 @@ a {
     box-shadow: 1px 1px 2px black;
 }
 
-.button-small{
+.button-small {
     font-size: .7rem;
 }
 
-#noticias p{
+#noticias p {
     text-align: justify;
     padding: 0 3rem;
 }
@@ -260,79 +260,48 @@ a {
 /***************** BIOGRAFIA *****************/
 
 #biografia {
-    background-image: url(../images/messi-fondo-biografia.png);
-    background-position: center;
+    background-image: linear-gradient(rgba(235, 241, 231, 0.6), rgba(235, 241, 231, 0.6)), url(../images/messi-fondo-biografia.png);
+    background-position: center center;
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 10px;
-    grid-template:
-        "titulobio titulobio"
-        "p1  bioimag1"
-        "bioimag2 p2"
-        "p3 bioimag3"
-    ;
+    background-repeat: no-repeat;
 
 }
 
-.biografia {
-    grid-area: titulobio;
-}
 
 .biografia h1 {
     margin-top: 25px;
 }
 
-.parrafo1,
-.parrafo2,
-.parrafo3 {
+.biografia__bloque {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 1rem;
+
 }
 
+.biografia__bloque img {
+    width: 40vw;
+    object-fit: cover;
+}
+
+
+
 .biop {
-    width: 70%;
-    font-size: 16px;
+    text-align: left;
+    font-size: 1rem;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     letter-spacing: 1px;
-    line-height: 2;
-    color: rgb(169, 126, 10);
+    line-height: 1.8;
+    color: rgb(14, 15, 2);
     text-shadow: 1px 1px rgb(34, 32, 32);
 }
 
-
-.parrafo1 {
-    grid-area: p1;
-}
-
-.parrafo2 {
-    grid-area: p2;
+.parrafo2 p {
     text-align: right;
 }
 
-.parrafo3 {
-    grid-area: p3;
-}
-
-.div-img1 {
-    grid-area: bioimag1;
-}
-
-.div-img2 {
-    grid-area: bioimag2;
-}
-
-.div-img3 {
-    grid-area: bioimag3;
-}
-
-.imgbio {
-    width: 100%;
-}
 
 
 /***************** FIN BIOGRAFIA *****************/
@@ -495,18 +464,9 @@ footer {
 /*********** MEADIA QUERIES ***********/
 
 
-@media (max-width: 991.2px) {
-    .linkNav {
-        text-align: center;
-        transition: all .1s;
-    }
 
-    .linkNav:hover {
-        background-color: #292c4c6d;
-    }
-}
 
-@media (max-width: 770px) {
+@media (max-width: 992px) {
 
     .encabezados-paginas {
         font-size: 2.5rem;
@@ -519,7 +479,16 @@ footer {
     .imgLogo {
         width: 4rem;
     }
-    
+
+    .linkNav {
+        text-align: center;
+        transition: all .1s;
+    }
+
+    .linkNav:hover {
+        background-color: #292c4c6d;
+    }
+
     .navbar-brand {
         font-size: 2rem;
     }
@@ -584,6 +553,18 @@ footer {
         border: 2px solid rgb(103, 93, 20);
     }
 
+    /* FIN NOTICIAS */
+
+    /* BIOGRAFIA */
+
+    .biop {
+        font-size: .75rem;
+        line-height: 1.6;
+        text-shadow: .6px .6px rgb(34, 32, 32);
+    }
+
+    /* FIN BIOGRAFIA */
+
     /* FOOTER */
 
     footer {
@@ -595,14 +576,18 @@ footer {
 
     }
 
-    .iconos-redes{
+    .iconos-redes {
         max-width: auto;
         margin-bottom: 0;
     }
 
+    .copyright p {
+        font-size: .8rem;
+    }
+
     .redes img {
-        width: 2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
     }
 
     .copyright {
@@ -610,23 +595,23 @@ footer {
         max-width: auto;
     }
 
-    .copyright p{
+    .copyright p {
         margin-bottom: 0;
     }
 
-   
+
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
 
     /* HEADER */
 
-    .imgLogo{
+    .imgLogo {
         display: none;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         border: none;
     }
 
@@ -638,7 +623,7 @@ footer {
         height: 70vh;
     }
 
-    .section-index1 h2{
+    .section-index1 h2 {
         letter-spacing: 0.7rem;
         font-size: 4rem;
     }
@@ -688,6 +673,32 @@ footer {
 
     /* FIN NOTICIAS */
 
+    /* BIOGRAFIA */
+
+    .biografia__bloque {
+        flex-direction: column;
+    }
+
+    .biografia__bloque img {
+        width: 70vw;
+    }
+
+    .biop {
+        text-align: justify;
+    }
+
+    .parrafo2 p {
+        text-align: justify;
+    }
+
+    .bloque2 {
+        flex-direction: column-reverse;
+    }
+
+    /* FIN BIOGRAFIA */
+
+    /* FOOTER */
+
     footer {
         min-width: 300px;
         height: 60px;
@@ -695,7 +706,7 @@ footer {
 
     .copyright p {
         max-width: 120px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .iconos-redes li {
