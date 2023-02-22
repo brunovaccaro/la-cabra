@@ -1,0 +1,154 @@
+@media (max-width: 992px) {
+    .encabezados-paginas {
+        font-size: 2.5rem;
+        border-bottom: black solid 2px;
+        border-right: black solid 2px;
+    }
+
+    .imgLogo {
+        width: 4rem;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .linkNav {
+        text-align: center;
+        transition: all .1s;
+
+        &:hover {
+            background-color: $background-color_4;
+        }
+    }
+
+    .section-index1 {
+        min-width: 300px;
+        height: 80vh;
+
+        h1 {
+            font-size: 5.5rem;
+        }
+    }
+
+    .andres {
+        display: none;
+    }
+
+    .cuccitini {
+        display: none;
+    }
+
+    .section-index2 {
+        margin: 0;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            padding: 15px;
+            line-height: 1.2;
+        }
+    }
+
+    .texto-section2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    #noticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .biop {
+        font-size: .75rem;
+        line-height: 1.6;
+        text-shadow: .6px .6px rgb(34, 32, 32);
+    }
+
+    .cont-img {
+        img {
+            filter: none;
+            transition: none;
+            transform: none;
+        }
+    }
+
+    iframe {
+        filter: none;
+        transition: none;
+        transform: none;
+    }
+
+    .bloque1-sorteos {
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+    }
+
+    .contenedor {
+        height: 22rem;
+        padding: 1rem;
+
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 6px;
+            margin-bottom: 10px;
+        }
+    }
+
+    input {
+        height: 1.6rem;
+        padding: 7px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .boton {
+        height: 2rem;
+        margin-top: .2rem;
+        border-radius: 4px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .copyright {
+        font-size: 0.3rem;
+        max-width: auto;
+
+        p {
+            font-size: .8rem;
+            margin-bottom: 0;
+        }
+    }
+
+    .iconos-redes {
+        max-width: auto;
+        margin-bottom: 0;
+    }
+
+    .redes {
+        img {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}

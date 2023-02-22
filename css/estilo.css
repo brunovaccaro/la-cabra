@@ -1,13 +1,6 @@
-/*******************************************************/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta:wght@800&family=Roboto:wght@400;500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Kanit&family=Montserrat:wght@200;400&display=swap');
-
-
-/*********** ESTILOS GENERALES ***********/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta:wght@800&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Kanit&family=Montserrat:wght@200;400&display=swap");
 
 * {
     margin: 0;
@@ -15,13 +8,13 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     height: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
     background-color: #F0F5EF;
 }
 
@@ -41,19 +34,12 @@ body {
     width: fit-content;
     display: flex;
     justify-content: center;
-
 }
-
 
 .titulo {
     display: flex;
     justify-content: center;
 }
-
-/************** FIN ESTILOS GENERALES ***************/
-
-
-/****************** HEADER *******************/
 
 header {
     grid-area: header;
@@ -68,8 +54,13 @@ header {
     padding: 0;
 }
 
+.navbar a {
+    color: #F0F5EF;
+    text-transform: uppercase;
+}
+
 .navbar-brand {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: italic;
     text-shadow: 0 2px 2px rgb(70, 68, 7);
 }
@@ -77,11 +68,6 @@ header {
 a {
     display: flex;
     align-items: center;
-}
-
-.navbar a {
-    color: #F0F5EF;
-    text-transform: uppercase;
 }
 
 .imgLogo {
@@ -92,20 +78,20 @@ a {
     color: #F0F5EF;
 }
 
-
 #navbarNav {
     justify-content: flex-end;
+    padding-right: 0.5rem;
 }
 
 .linkNav {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 500;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .linkNav:hover {
     color: rgb(214, 207, 2);
-    transform: scale(1.05, 1.00);
+    transform: scale(1.05, 1);
 }
 
 .navbar-toggler {
@@ -120,18 +106,45 @@ a {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28239, 239, 239, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/***************** FIN HEADER *****************/
+footer {
+    height: auto;
+    background: linear-gradient(to bottom right, #beaa27, #7c730e);
+    border-top: 3px solid #252422;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: footer;
+}
 
-/***************** INDEX *****************/
+.copyright p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos-redes li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.redes img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
 .section-index1 {
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgba(57, 149, 182, 0.888);
-    background-image: linear-gradient(0deg,
-            rgba(30, 7, 12, 0.5),
-            rgba(5, 7, 12, 0.5)), url(../images/messicopadelmundo.jpg);
+    background-image: linear-gradient(0deg, rgba(30, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../images/messicopadelmundo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,12 +158,11 @@ a {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px rgb(237, 237, 237);
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     line-height: 1.1;
     letter-spacing: 10px;
     word-spacing: 2rem;
 }
-
 
 .section-index2 {
     padding: 10px;
@@ -172,12 +184,6 @@ a {
     letter-spacing: 1px;
 }
 
-.texto-section2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .section-index2 p {
     padding: 30px;
     text-align: justify;
@@ -186,16 +192,17 @@ a {
     line-height: 1.5;
 }
 
-
-/***************** FIN INDEX *****************/
-
-/***************** NOTICIAS *****************/
+.texto-section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 .img-sm {
@@ -203,7 +210,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: .2rem;
+    padding: 0.2rem;
     margin: 0 auto;
 }
 
@@ -212,7 +219,7 @@ a {
 }
 
 .img-sm p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-align: justify;
 }
 
@@ -233,12 +240,8 @@ a {
 }
 
 .button-small {
-    font-size: .7rem;
+    font-size: 0.7rem;
 }
-
-/***************** FIN NOTICIAS *****************/
-
-/***************** BIOGRAFIA *****************/
 
 #biografia {
     background-image: linear-gradient(rgba(235, 241, 231, 0.6), rgba(235, 241, 231, 0.6)), url(../images/messi-fondo-biografia.png);
@@ -247,11 +250,15 @@ a {
     background-repeat: no-repeat;
 }
 
-
 .biografia__bloque {
     display: flex;
     align-items: center;
     padding: 1rem;
+}
+
+.biografia__bloque img {
+    width: 40vw;
+    object-fit: cover;
 }
 
 .biografia h1 {
@@ -262,11 +269,11 @@ a {
     text-align: left;
     font-size: 1rem;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: italic;
     letter-spacing: 1px;
     line-height: 1.8;
-    color: rgb(14, 15, 2);
+    color: rgb(18, 18, 18);
     text-shadow: 1px 1px rgb(33, 34, 32);
 }
 
@@ -274,25 +281,14 @@ a {
     text-align: right;
 }
 
-.biografia__bloque img {
-    width: 40vw;
-    object-fit: cover;
-}
-
-
-/***************** FIN BIOGRAFIA *****************/
-
-/***************** GALERIA *****************/
-
 #galeria {
     margin: 1rem;
     padding: 1rem;
 }
 
-
 .cont-img {
-    margin: .5rem;
-    padding: 0 .5rem;
+    margin: 0.5rem;
+    padding: 0 0.5rem;
 }
 
 .cont-img img {
@@ -310,7 +306,7 @@ a {
 }
 
 .videos {
-    margin: .5rem;
+    margin: 0.5rem;
 }
 
 iframe {
@@ -324,12 +320,13 @@ iframe:hover {
     filter: contrast(100%);
 }
 
-/***************** FIN GALERIA *****************/
-
-/***************** SORTEOS *****************/
-
 #sorteos {
     height: 55rem;
+}
+
+#sorteos img {
+    width: 100%;
+    padding-bottom: 5rem;
 }
 
 .principal-sorteos {
@@ -348,12 +345,6 @@ iframe:hover {
     justify-content: space-between;
 }
 
-.bloque2-sorteos {
-    width: 40vw;
-    height: 100%;
-}
-
-
 .bloque1-sorteos h2 {
     text-transform: uppercase;
     font-size: 2rem;
@@ -364,10 +355,9 @@ iframe:hover {
     font-weight: 200;
 }
 
-
-#sorteos img {
-    width: 100%;
-    padding-bottom: 5rem;
+.bloque2-sorteos {
+    width: 40vw;
+    height: 100%;
 }
 
 .contenedor {
@@ -377,8 +367,8 @@ iframe:hover {
     margin-left: 4rem;
     padding: 30px;
     border-radius: 1px;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(0, 21, 29);
+    font-family: "Roboto", sans-serif;
+    color: rgb(0, 0, 0);
     box-shadow: 3px 5px 15px #002022;
 }
 
@@ -393,28 +383,27 @@ iframe:hover {
 input {
     width: 100%;
     height: 3rem;
-    background-color: #eceef0;
+    background-color: #e4e8e1;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 20px;
     border: 1px solid #1f53c5;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
 }
 
 .boton {
     width: 100%;
     height: 45px;
-    margin-top: .3rem;
+    margin-top: 0.3rem;
     margin-bottom: 1rem;
     border-radius: 4px;
     border: none;
-    color: white;
+    color: #F0F5EF;
     text-transform: uppercase;
     background: linear-gradient(to right bottom, #55aacf, #104864);
     font-size: 20px;
 }
-
 
 .boton:hover {
     cursor: pointer;
@@ -428,59 +417,12 @@ input {
     height: 60px;
 }
 
-/***************** FIN SORTEOS *****************/
-
-/***************** FOOTER *****************/
-
-footer {
-    height: auto;
-    background: linear-gradient(to bottom right, #beaa27, #7c730e);
-    border-top: 3px solid #252422;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: footer;
-}
-
-
-.copyright p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
-
-
-.iconos-redes {
-    display: flex;
-    justify-content: space-between;
-}
-
-.iconos-redes li {
-    list-style: none;
-    margin: 0 20px;
-}
-
-.redes img {
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-/************ FIN FOOTER ***************/
-
-/*********** MEADIA QUERIES ***********/
-
-
 @media (max-width: 992px) {
-
     .encabezados-paginas {
         font-size: 2.5rem;
         border-bottom: black solid 2px;
         border-right: black solid 2px;
     }
-
-    /*********** HEADER ***********/
 
     .imgLogo {
         width: 4rem;
@@ -492,16 +434,12 @@ footer {
 
     .linkNav {
         text-align: center;
-        transition: all .1s;
+        transition: all 0.1s;
     }
 
     .linkNav:hover {
-        background-color: #292c4c6d;
+        background-color: rgba(41, 44, 76, 0.4274509804);
     }
-
-    /*********** FIN HEADER ***********/
-
-    /*********** INDEX ***********/
 
     .section-index1 {
         min-width: 300px;
@@ -521,7 +459,6 @@ footer {
     }
 
     .section-index2 {
-
         margin: 0;
     }
 
@@ -529,23 +466,17 @@ footer {
         font-size: 3rem;
     }
 
+    .section-index2 p {
+        padding: 15px;
+        line-height: 1.2;
+    }
+
     .texto-section2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         font-size: 1rem;
-
     }
-
-    .section-index2 p {
-        padding: 15px;
-        line-height: 1.2;
-
-    }
-
-    /*********** FIN INDEX ***********/
-
-    /*********** NOTICIAS ***********/
 
     #noticias {
         display: flex;
@@ -553,30 +484,23 @@ footer {
         align-items: center;
     }
 
-    /*********** FIN NOTICIAS ***********/
-
-    /*********** BIOGRAFIA ***********/
-
     .biop {
-        font-size: .75rem;
+        font-size: 0.75rem;
         line-height: 1.6;
-        text-shadow: .6px .6px rgb(34, 32, 32);
+        text-shadow: 0.6px 0.6px rgb(34, 32, 32);
     }
 
-    /*********** FIN BIOGRAFIA ***********/
-
-    /*********** GALERIA ***********/
-
-    .cont-img img,
-    iframe {
+    .cont-img img {
         filter: none;
         transition: none;
         transform: none;
     }
 
-    /*********** FIN GALERIA ***********/
-
-    /*********** SORTEOS ***********/
+    iframe {
+        filter: none;
+        transition: none;
+        transform: none;
+    }
 
     .bloque1-sorteos h2 {
         font-size: 1.4rem;
@@ -607,15 +531,11 @@ footer {
 
     .boton {
         height: 2rem;
-        margin-top: .2rem;
+        margin-top: 0.2rem;
         border-radius: 4px;
         font-size: 1rem;
         text-align: center;
     }
-
-    /*********** FIN SORTEOS ***********/
-
-    /*********** FOOTER ***********/
 
     footer {
         display: flex;
@@ -631,7 +551,7 @@ footer {
     }
 
     .copyright p {
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-bottom: 0;
     }
 
@@ -644,21 +564,15 @@ footer {
         width: 1.8rem;
         height: 1.8rem;
     }
-
-    /*********** FIN FOOTER ***********/
 }
 
-
 @media (max-width: 450px) {
-
     .encabezados-paginas {
         font-size: 1.5rem;
         border-bottom: black solid 2px;
         border-right: black solid 2px;
         text-shadow: 1px 1px rgb(94, 131, 144);
     }
-
-    /*********** HEADER ***********/
 
     .imgLogo {
         display: none;
@@ -667,10 +581,6 @@ footer {
     .navbar-toggler {
         border: none;
     }
-
-    /*********** FIN HEADER ***********/
-
-    /*********** INDEX ***********/
 
     .section-index1 {
         height: 70vh;
@@ -684,7 +594,6 @@ footer {
     .section-index2 {
         display: flex;
         flex-direction: column;
-
     }
 
     .section-index2 h2 {
@@ -692,19 +601,14 @@ footer {
         text-shadow: 1px 1px 2px;
     }
 
-    .texto-section2 {
-        font-size: 0.7rem;
-
-    }
-
     .section-index2 p {
         padding: 8px;
         line-height: 1.1;
     }
 
-    /*********** FIN INDEX ***********/
-
-    /*********** BIOGRAFIA ***********/
+    .texto-section2 {
+        font-size: 0.7rem;
+    }
 
     .biografia__bloque {
         flex-direction: column;
@@ -726,10 +630,6 @@ footer {
         flex-direction: column-reverse;
     }
 
-    /*********** FIN BIOGRAFIA ***********/
-
-    /*********** SORTEOS ***********/
-
     .principal-sorteos {
         margin-top: 0;
         padding-top: 1rem;
@@ -742,18 +642,18 @@ footer {
         min-width: 280px;
     }
 
-    .bloque2-sorteos {
-        width: 80vw;
-        min-width: 280px;
-        margin-left: 2.5rem;
-    }
-
     .bloque1-sorteos h2 {
         font-size: 1.2rem;
     }
 
     .bloque1-sorteos h4 {
         font-size: 1rem;
+    }
+
+    .bloque2-sorteos {
+        width: 80vw;
+        min-width: 280px;
+        margin-left: 2.5rem;
     }
 
     .contenedor {
@@ -770,7 +670,7 @@ footer {
     }
 
     input {
-        height: .8rem;
+        height: 0.8rem;
         padding: 7px;
         border-radius: 4px;
         margin-bottom: 20px;
@@ -779,15 +679,12 @@ footer {
 
     .boton {
         height: 1rem;
-        margin-top: .2rem;
+        margin-top: 0.2rem;
         border-radius: 4px;
-        font-size: .6rem;
+        font-size: 0.6rem;
         text-align: center;
     }
 
-    /*********** FIN SORTEOS ***********/
-
-    /*********** FOOTER ***********/
     footer {
         min-width: 300px;
         height: 60px;
@@ -806,7 +703,6 @@ footer {
         width: 1.5rem;
         height: 1.5rem;
     }
-
-    /*********** FIN FOOTER ***********/
-
 }
+
+/*# sourceMappingURL=estilo.css.map */

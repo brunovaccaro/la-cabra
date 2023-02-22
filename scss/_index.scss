@@ -1,0 +1,58 @@
+.section-index1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color_3;
+    background-image: linear-gradient(0deg, rgba(30, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../images/messicopadelmundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: grid;
+
+    h1 {
+        margin: 0 1.5rem;
+        font-size: 6rem;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgb(237, 237, 237);
+        font-family: $font-family_4;
+        line-height: 1.1;
+        letter-spacing: 10px;
+        word-spacing: 2rem;
+    }
+}
+
+.section-index2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 5px solid goldenrod;
+    height: auto;
+    display: grid;
+
+    h2 {
+        height: 100%;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        color: $color_5;
+        text-shadow: 2px 2px 4px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        padding: 30px;
+        text-align: justify;
+        font-style: oblique;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+}
+
+.texto-section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
