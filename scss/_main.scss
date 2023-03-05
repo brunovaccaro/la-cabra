@@ -1,0 +1,275 @@
+.section-index1 {
+    @include filaCentrada;
+    align-items: center;
+    color: $color_3;
+    background-image: linear-gradient(0deg, rgba(30, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../images/messicopadelmundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: grid;
+
+    h1 {
+        margin: 0 1.5rem;
+        font-size: 6rem;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgb(237, 237, 237);
+        font-family: $font-family_4;
+        line-height: 1.1;
+        letter-spacing: 10px;
+        word-spacing: 2rem;
+    }
+}
+
+.section-index2 {
+    padding: 10px;
+    justify-content: space-around;
+    border-top: 5px solid goldenrod;
+    height: auto;
+    display: grid;
+
+    h2 {
+        height: 100%;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        color: $color_5;
+        text-shadow: 2px 2px 4px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        padding: 30px;
+        text-align: justify;
+        font-style: oblique;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+}
+
+.texto-section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img {
+    @include columnaCentrada;
+    padding: .5rem;
+}
+
+.img-sm {
+    @include columnaCentrada;
+    justify-content: center;
+    padding: .2rem;
+    margin: 0 auto;
+
+    h3 {
+        padding: 0 20px;
+    }
+
+    p {
+        font-size: .9rem;
+        text-align: justify;
+    }
+}
+
+#noticias {
+    p {
+        text-align: justify;
+        padding: 0 3rem;
+    }
+
+    img {
+        border-radius: 3px;
+    }
+
+    button {
+        padding: 2px 5px;
+        border-radius: 8px;
+        background-color: $background-color_3;
+        box-shadow: 1px 1px 2px black;
+    }
+}
+
+.button-small {
+    font-size: .7rem;
+}
+
+#biografia {
+    background-image: linear-gradient(rgba(235, 241, 231, 0.6), rgba(235, 241, 231, 0.6)), url(../images/messi-fondo-biografia.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.biografia__bloque {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    img {
+        width: 40vw;
+        object-fit: cover;
+    }
+}
+
+.biografia {
+    h1 {
+        margin-top: 25px;
+    }
+}
+
+.biop {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: $font-family_5;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    color: $color_5;
+    text-shadow: 1px 1px rgb(33, 34, 32);
+}
+
+.parrafo2 {
+    p {
+        text-align: right;
+    }
+}
+
+#galeria {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.cont-img {
+    margin: .5rem;
+    padding: 0 .5rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2px;
+        filter: brightness(50%);
+        transition: all 1s;
+
+        &:hover {
+            filter: brightness(100%);
+            transform: scale(1.05);
+        }
+    }
+}
+
+.videos {
+    margin: .5rem;
+}
+
+iframe {
+    width: 100%;
+    filter: contrast(50%);
+    transition: 1s;
+    object-fit: cover;
+
+    &:hover {
+        filter: contrast(100%);
+    }
+}
+
+#sorteos {
+
+    img {
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+}
+
+.principal-sorteos {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bloque1-sorteos {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+}
+
+.bloque2-sorteos {
+    width: 40vw;
+    height: 100%;
+}
+
+.contenedor {
+    background-color: $background-color_1;
+    height: 32rem;
+    padding: 30px;
+    border-radius: 1px;
+    font-family: $font-family_1;
+    color: $color_4;
+    box-shadow: 3px 5px 15px #002022;
+
+    h2 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+}
+
+input {
+    width: 100%;
+    height: 3rem;
+    background-color: $background-color_2;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #1f53c5;
+    font-family: $font-family_1;
+    font-size: 18px;
+}
+
+.boton {
+    width: 100%;
+    height: 45px;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: none;
+    color: $color_1;
+    text-transform: uppercase;
+    background: linear-gradient(to right bottom, #55aacf, #104864);
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+}
+
+.input {
+    &:focus {
+        height: 60px;
+    }
+}
