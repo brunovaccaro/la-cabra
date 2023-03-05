@@ -132,6 +132,7 @@ footer {
   height: 2.5rem;
 }
 
+/************ INDEX *************/
 .section-index1 {
   display: flex;
   justify-content: center;
@@ -186,6 +187,22 @@ footer {
   align-items: center;
 }
 
+/************ FIN INDEX *************/
+/************ NOTICIAS *************/
+#noticias p {
+  text-align: justify;
+  padding: 0 3rem;
+}
+#noticias img {
+  border-radius: 3px;
+}
+#noticias button {
+  padding: 2px 5px;
+  border-radius: 8px;
+  background-color: rgb(218, 233, 239);
+  box-shadow: 1px 1px 2px black;
+}
+
 .img {
   display: flex;
   flex-direction: column;
@@ -209,24 +226,12 @@ footer {
   text-align: justify;
 }
 
-#noticias p {
-  text-align: justify;
-  padding: 0 3rem;
-}
-#noticias img {
-  border-radius: 3px;
-}
-#noticias button {
-  padding: 2px 5px;
-  border-radius: 8px;
-  background-color: rgb(218, 233, 239);
-  box-shadow: 1px 1px 2px black;
-}
-
 .button-small {
   font-size: 0.7rem;
 }
 
+/************ FIN NOTICIAS *************/
+/************ BIOGRAFIA *************/
 #biografia {
   background-image: linear-gradient(rgba(235, 241, 231, 0.6), rgba(235, 241, 231, 0.6)), url(../images/messi-fondo-biografia.png);
   background-position: center center;
@@ -264,6 +269,8 @@ footer {
   text-align: right;
 }
 
+/************ FIN BIOGRAFIA *************/
+/************ GALERIA *************/
 #galeria {
   margin: 1rem;
   padding: 1rem;
@@ -300,6 +307,8 @@ iframe:hover {
   filter: contrast(100%);
 }
 
+/************ FIN GALERIA *************/
+/************ SORTEOS *************/
 #sorteos img {
   width: 100%;
   padding-bottom: 5rem;
@@ -386,6 +395,7 @@ input {
   height: 60px;
 }
 
+/************ FIN SORTEOS *************/
 @media (max-width: 992px) {
   .encabezados-paginas {
     font-size: 2.5rem;
