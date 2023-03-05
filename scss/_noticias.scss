@@ -1,14 +1,10 @@
 .img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include columnaCentrada;
     padding: .5rem;
 }
 
 .img-sm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include columnaCentrada;
     justify-content: center;
     padding: .2rem;
     margin: 0 auto;

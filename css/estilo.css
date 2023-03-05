@@ -31,8 +31,6 @@ body {
   border-right: black solid 3px;
   border-radius: 4px;
   width: fit-content;
-  display: flex;
-  justify-content: center;
 }
 
 .titulo {
@@ -103,13 +101,13 @@ a {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: auto;
   background: linear-gradient(to bottom right, #beaa27, #7c730e);
   border-top: 3px solid #252422;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   grid-area: footer;
 }
 
@@ -136,8 +134,8 @@ footer {
 
 .section-index1 {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: rgba(57, 149, 182, 0.888);
   background-image: linear-gradient(0deg, rgba(30, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../images/messicopadelmundo.jpg);
   background-position: center center;
@@ -160,8 +158,6 @@ footer {
 
 .section-index2 {
   padding: 10px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   border-top: 5px solid goldenrod;
   height: auto;
@@ -433,9 +429,10 @@ input {
     line-height: 1.2;
   }
   .texto-section2 {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     font-size: 1rem;
   }
   #noticias {
@@ -553,7 +550,7 @@ input {
     line-height: 1.1;
   }
   .texto-section2 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .biografia__bloque {
     flex-direction: column;

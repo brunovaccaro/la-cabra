@@ -53,9 +53,8 @@
     }
 
     .texto-section2 {
-        flex-direction: column;
+        @include columnaCentrada;
         justify-content: center;
-        align-items: center;
         font-size: 1rem;
     }
 
@@ -204,7 +203,7 @@
     }
 
     .texto-section2 {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .biografia__bloque {

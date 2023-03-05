@@ -1,11 +1,9 @@
 footer {
+    @include columnaCentrada;
     height: auto;
     background: linear-gradient(to bottom right, #beaa27, #7c730e);
     border-top: 3px solid #252422;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     grid-area: footer;
 }
 
