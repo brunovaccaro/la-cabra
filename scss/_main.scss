@@ -60,22 +60,29 @@
 /************ NOTICIAS *************/
 
 #noticias {
+
     p {
         text-align: justify;
         padding: 0 3rem;
     }
-    
+
     img {
         border-radius: 3px;
     }
-    
+
     button {
         padding: 2px 5px;
         border-radius: 8px;
         background-color: $background-color_3;
         box-shadow: 1px 1px 2px black;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $color_3;
+        }
     }
 }
+
 
 .img {
     @include columnaCentrada;
@@ -84,9 +91,8 @@
 
 .img-sm {
     @include columnaCentrada;
-    justify-content: center;
+    justify-content: space-between;
     padding: .2rem;
-    margin: 0 auto;
 
     h3 {
         padding: 0 20px;

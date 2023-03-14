@@ -130,6 +130,10 @@ footer {
 .redes img {
   width: 2.5rem;
   height: 2.5rem;
+  transition: all 0.3s;
+}
+.redes img:hover {
+  transform: scale(1.1, 1.1);
 }
 
 /************ INDEX *************/
@@ -201,6 +205,10 @@ footer {
   border-radius: 8px;
   background-color: rgb(218, 233, 239);
   box-shadow: 1px 1px 2px black;
+  transition: all 0.3s;
+}
+#noticias button:hover {
+  background-color: rgba(57, 149, 182, 0.888);
 }
 
 .img {
@@ -214,9 +222,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0.2rem;
-  margin: 0 auto;
 }
 .img-sm h3 {
   padding: 0 20px;
