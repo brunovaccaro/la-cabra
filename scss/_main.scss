@@ -60,6 +60,7 @@
 /************ NOTICIAS *************/
 
 #noticias {
+    
 
     p {
         text-align: justify;
@@ -76,7 +77,6 @@
         background-color: $background-color_3;
         box-shadow: 1px 1px 2px black;
         transition: all .3s;
-
         &:hover {
             background-color: $color_3;
         }
@@ -87,15 +87,23 @@
 .img {
     @include columnaCentrada;
     padding: .5rem;
+
+    h3 {
+        padding: 0 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
+
 
 .img-sm {
     @include columnaCentrada;
-    justify-content: space-between;
     padding: .2rem;
 
     h3 {
-        padding: 0 20px;
+        padding: 0 1rem;
     }
 
     p {
@@ -104,8 +112,21 @@
     }
 }
 
+.notiCont {
+    @include columnaCentrada;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.textCont {
+    @include columnaCentrada;
+}
+
+
 .button-small {
     font-size: .7rem;
+    position: relative;
+    bottom: 0;
 }
 
 /************ FIN NOTICIAS *************/
