@@ -60,7 +60,6 @@
 /************ NOTICIAS *************/
 
 #noticias {
-    
 
     p {
         text-align: justify;
@@ -84,11 +83,12 @@
 }
 
 
-.img {
+.contUp {
     @include columnaCentrada;
     padding: .5rem;
 
     h3 {
+        letter-spacing: .1rem;
         padding: 0 1.2rem;
     }
 
@@ -98,12 +98,13 @@
 }
 
 
-.img-sm {
+.contDown {
     @include columnaCentrada;
     padding: .2rem;
 
     h3 {
-        padding: 0 1rem;
+        letter-spacing: .08rem;
+        padding: 0 1rem
     }
 
     p {
@@ -112,9 +113,9 @@
     }
 }
 
+
 .notiCont {
     @include columnaCentrada;
-    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -125,8 +126,6 @@
 
 .button-small {
     font-size: .7rem;
-    position: relative;
-    bottom: 0;
 }
 
 /************ FIN NOTICIAS *************/
@@ -246,7 +245,7 @@ iframe {
     justify-content: space-between;
 
     h2 {
-        text-transform: uppercase;
+        letter-spacing: .1rem;
         font-size: 2rem;
     }
 

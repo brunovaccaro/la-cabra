@@ -1,9 +1,12 @@
 @media (max-width: 992px) {
+
+    /* GENERALES */
     .encabezados-paginas {
         font-size: 2.5rem;
         border-bottom: black solid 2px;
         border-right: black solid 2px;
     }
+    /* HEADER */
 
     .imgLogo {
         width: 4rem;
@@ -15,12 +18,21 @@
 
     .linkNav {
         text-align: center;
-        transition: all .1s;
+        transition: none;
 
         &:hover {
+            color: $color_1;
+            transform: none;
+            background-color: none;
+        }
+
+        &:focus {
+            color: $color_2;
             background-color: $background-color_4;
         }
     }
+
+    /* INDEX */
 
     .section-index1 {
         min-width: 300px;
@@ -58,11 +70,15 @@
         font-size: 1rem;
     }
 
+    /* NOTICIAS */
+
     #noticias {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    
+    /* BIOGRAFIA */
 
     .biop {
         font-size: .75rem;
@@ -70,12 +86,17 @@
         text-shadow: .6px .6px rgb(34, 32, 32);
     }
 
+    /* GALERIA */
+
     .cont-img {
         img {
             filter: none;
             transition: none;
-            transform: none;
-        }
+
+            &:hover {
+                transform: none;
+            }
+        }   
     }
 
     iframe {
@@ -83,6 +104,8 @@
         transition: none;
         transform: none;
     }
+
+    /* SORTEOS */
 
     .principal-sorteos {
         flex-direction: column;
@@ -131,6 +154,8 @@
         text-align: center;
     }
 
+    /* FOOTER */
+
     footer {
         display: flex;
         flex-direction: row;
@@ -158,17 +183,29 @@
         img {
             width: 1.8rem;
             height: 1.8rem;
+            transition: none;
+            
+            &:hover {
+                transform: none;
+            }
+
         }
+    
     }
 }
 
 @media (max-width: 580px) {
+
+    /* GENERALES */
+
     .encabezados-paginas {
         font-size: 1.5rem;
         border-bottom: black solid 2px;
         border-right: black solid 2px;
         text-shadow: 1px 1px rgb(94, 131, 144);
     }
+
+    /* HEADER */
 
     .imgLogo {
         display: none;
@@ -186,6 +223,8 @@
             font-size: 4rem;
         }
     }
+
+    /* INDEX */
 
     .section-index2 {
         display: flex;
@@ -214,6 +253,8 @@
         }
     }
 
+    /* BIOGRAFIA */
+
     .biop {
         text-align: justify;
     }
@@ -227,6 +268,8 @@
     .bloque2 {
         flex-direction: column-reverse;
     }
+
+    /* SORTEOS */
 
     .principal-sorteos {
         margin-top: 2rem;
@@ -243,7 +286,6 @@
             font-size: 1rem;
         }
     }
-
 
     .contenedor {
         height: 20rem;
@@ -271,6 +313,8 @@
         font-size: .6rem;
         text-align: center;
     }
+
+    /* FOOTER */
 
     footer {
         min-width: 300px;

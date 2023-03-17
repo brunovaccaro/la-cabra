@@ -104,6 +104,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: auto;
   background: linear-gradient(to bottom right, #beaa27, #7c730e);
   border-top: 3px solid #252422;
@@ -211,29 +212,33 @@ footer {
   background-color: rgba(57, 149, 182, 0.888);
 }
 
-.img {
+.contUp {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 0.5rem;
 }
-.img h3 {
+.contUp h3 {
+  letter-spacing: 0.1rem;
   padding: 0 1.2rem;
 }
-.img p {
+.contUp p {
   font-size: 1rem;
 }
 
-.img-sm {
+.contDown {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 0.2rem;
 }
-.img-sm h3 {
+.contDown h3 {
+  letter-spacing: 0.08rem;
   padding: 0 1rem;
 }
-.img-sm p {
+.contDown p {
   font-size: 0.9rem;
   text-align: justify;
 }
@@ -250,12 +255,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .button-small {
   font-size: 0.7rem;
-  position: relative;
-  bottom: 0;
 }
 
 /************ FIN NOTICIAS *************/
@@ -358,7 +362,7 @@ iframe:hover {
   justify-content: space-between;
 }
 .bloque1-sorteos h2 {
-  text-transform: uppercase;
+  letter-spacing: 0.1rem;
   font-size: 2rem;
 }
 .bloque1-sorteos h4 {
@@ -425,11 +429,13 @@ input {
 
 /************ FIN SORTEOS *************/
 @media (max-width: 992px) {
+  /* GENERALES */
   .encabezados-paginas {
     font-size: 2.5rem;
     border-bottom: black solid 2px;
     border-right: black solid 2px;
   }
+  /* HEADER */
   .imgLogo {
     width: 4rem;
   }
@@ -438,11 +444,18 @@ input {
   }
   .linkNav {
     text-align: center;
-    transition: all 0.1s;
+    transition: none;
   }
   .linkNav:hover {
+    color: #F0F5EF;
+    transform: none;
+    background-color: none;
+  }
+  .linkNav:focus {
+    color: rgb(214, 207, 2);
     background-color: rgba(41, 44, 76, 0.4274509804);
   }
+  /* INDEX */
   .section-index1 {
     min-width: 300px;
     height: 80vh;
@@ -470,22 +483,28 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     justify-content: center;
     font-size: 1rem;
   }
+  /* NOTICIAS */
   #noticias {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  /* BIOGRAFIA */
   .biop {
     font-size: 0.75rem;
     line-height: 1.6;
     text-shadow: 0.6px 0.6px rgb(34, 32, 32);
   }
+  /* GALERIA */
   .cont-img img {
     filter: none;
     transition: none;
+  }
+  .cont-img img:hover {
     transform: none;
   }
   iframe {
@@ -493,6 +512,7 @@ input {
     transition: none;
     transform: none;
   }
+  /* SORTEOS */
   .principal-sorteos {
     flex-direction: column;
   }
@@ -531,6 +551,7 @@ input {
     font-size: 1rem;
     text-align: center;
   }
+  /* FOOTER */
   footer {
     display: flex;
     flex-direction: row;
@@ -553,15 +574,21 @@ input {
   .redes img {
     width: 1.8rem;
     height: 1.8rem;
+    transition: none;
+  }
+  .redes img:hover {
+    transform: none;
   }
 }
 @media (max-width: 580px) {
+  /* GENERALES */
   .encabezados-paginas {
     font-size: 1.5rem;
     border-bottom: black solid 2px;
     border-right: black solid 2px;
     text-shadow: 1px 1px rgb(94, 131, 144);
   }
+  /* HEADER */
   .imgLogo {
     display: none;
   }
@@ -575,6 +602,7 @@ input {
     letter-spacing: 0.7rem;
     font-size: 4rem;
   }
+  /* INDEX */
   .section-index2 {
     display: flex;
     flex-direction: column;
@@ -596,6 +624,7 @@ input {
   .biografia__bloque img {
     width: 70vw;
   }
+  /* BIOGRAFIA */
   .biop {
     text-align: justify;
   }
@@ -605,6 +634,7 @@ input {
   .bloque2 {
     flex-direction: column-reverse;
   }
+  /* SORTEOS */
   .principal-sorteos {
     margin-top: 2rem;
   }
@@ -640,6 +670,7 @@ input {
     font-size: 0.6rem;
     text-align: center;
   }
+  /* FOOTER */
   footer {
     min-width: 300px;
     height: 60px;
