@@ -493,6 +493,12 @@ input {
     flex-direction: column;
     align-items: center;
   }
+  #noticias button {
+    transition: none;
+  }
+  #noticias button:hover {
+    background-color: rgb(218, 233, 239);
+  }
   /* BIOGRAFIA */
   .biop {
     font-size: 0.75rem;
